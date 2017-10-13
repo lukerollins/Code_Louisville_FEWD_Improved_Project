@@ -1,0 +1,181 @@
+/* Strip that ul of padding and list styling. Could do with some fiddlin' if I wanna make it purttier */
+
+
+.navtop {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/*Create a horizontal list with spacing. Could do with some fiddlin' if I wanna make it purttier*/
+
+.navtop a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 13px;   
+}
+
+.navtop a:hover {
+    background-color: white;
+    color: black;  
+}
+
+.navtop .icon {
+    display: none;
+}
+   
+
+
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.container {
+    margin: 4px 12px;
+}
+
+.column {
+    display: inline-block;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & Previous Buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: darkgrey;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*On hover, add a black background color with a little bit see-through */
+
+prev:hover, next:hover { 
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text */
+.numbertext {
+    color: darkgray;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: black; 
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav.respond {position: relative;}
+    .topnav.respond a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        }
+    .respond a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Older Works of Luke Rollins Famous Artist</title>
+    
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="CSS/art_page_four.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="clearfix">
+             <ul class="clearfix">
+                <li><a href="index_art.html">Home/About</a></li>
+                <li><a href="art_page_newer.html">Newer</a></li>
+                <li><a href="art_page_older.html">Older</a></li>
+                <li><a href="#">Flyers</a></li>
+                <li><a href="#">Sketchbooks</a></li>
+                <li><a href="#">Contact</a></li>
+             </ul>
+            <a href="#" id="pull">Menu</a>
+   </nav>
+    
+    <div class="row">
+        <div class="column">
+            <img class="thumbs" src="Imgs/Americana%20%20one%20%20photo%20thumb.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow">
+        </div>
+            
+        <div class="column">
+             <img class="thumbs" src="Imgs/Americana%20%20two%20thumb.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+        </div> 
+        
+        <div class="column">
+            <img class="thumbs" src="Imgs/Mom%20%20gift%20thumb.jpg" onclick="openModal(); currentSlide(3)" class="hover-shadow">
+        </div>
+        
+        <div class="column">
+            <img class="thumbs" src="Imgs/EASTERN%20%20LANES204%20%20II%20thumb.jpg" onclick="openModal(); currentSlide(4)" class="hover-shadow">
+        </div>
+        
+        <div class="column">
+            <img class="thumbs" src="Imgs/Louisville%20%20@%20%20night%20%20web%20thumb.jpg" onclick="openModal(); currentSlide(5)" class="hover-shadow">
+        </div>
+        
+        
+    </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+         <div class="modal-content">
+            <div class="mySlides">
+             <div class="numbertext"><p>1 / 5</p></div>
+                <img src="Imgs/Americana%20%20one%20%20photo%20web.jpg" style="width: 100%">
+            </div>
+             <div class="mySlides">
+               <div class="numbertext"><p>2 / 5</p>
+                 </div>
+                 <img src="Imgs/Americana%20%20two%20web.jpg" style="width: 100%">
+             </div>
+             <div class="mySlides">
+               <div class="numbertext"><p>3 / 5</p>
+                 </div>
+                 <img src="Imgs/Mom%20%20gift%20web.jpg" style="width: 100%">
+             </div>
+             
+             <div class="mySlides">
+               <div class="numbertext"><p>4 / 5</p>
+                 </div>
+                 <img src="Imgs/EASTERN%20%20LANES204%20%20II%20web.jpg" style="width: 100%">
+             </div>
+             
+             <div class="mySlides">
+               <div class="numbertext"><p>5 / 5</p>
+                 </div>
+                 <img src="Imgs/Louisville%20%20@%20%20night%20%20web.jpg" style="width: 100%">
+             </div>
+                        
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         
+       </div>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+            
+            <div class="column">
+             <img class="demo cursor" src="Imgs/Americana%20%20one%20%20photo%20thumb.jpg" onclick="currentSlide(1)" alt="Americana photo thumbnail">
+            </div>
+            
+            <div class="column">
+             <img class="demo cursor" src="Imgs/Americana%20%20two%20thumb.jpg" onclick="currentSlide(2)" alt="Americana two Thumbnail">
+            </div>
+            
+              <div class="column">
+             <img class="demo cursor" src="Imgs/Mom%20%20gift%20thumb.jpg" onclick="currentSlide(3)" alt="A Gift for My Mom">
+            </div>
+
+            <div class="column">
+             <img class="demo cursor" src="Imgs/EASTERN%20%20LANES204%20%20II%20thumb.jpg" onclick="currentSlide(4)" alt="EASTERN LANES II">
+            </div>
+            
+            <div class="column">
+             <img class="demo cursor" src="Imgs/Louisville%20%20@%20%20night%20%20web%20thumb.jpg" onclick="currentSlide(5)" alt="Louisville At Night">
+            </div>
+    </div>
+
+    
+    <script type="text/javascript" src="JS/jquery-3.2.1.min.js" ></script>
+    <script type="text/javascript" src="JS/flexible_nav_menu.js" ></script>
+       <script type="text/javascript" src="JS/art_page.js" ></script>
+            
+            
+    </body>
+</html>
