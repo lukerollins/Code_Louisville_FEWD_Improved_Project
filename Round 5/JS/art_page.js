@@ -7,7 +7,7 @@ function closeModal() {
          }
 
 var slideIndex = 1;
-         showsSlides($slideIndex);
+         showsSlides(slideIndex);
 function plusSlides(n) {
              showSlides(slideIndex += n);
          }
