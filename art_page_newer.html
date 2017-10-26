@@ -10,10 +10,11 @@
 </head>
     
 <body>
+    <header>Luke Rollins: Famous Artist</header>
     <nav class="clearfix">
              <ul class="clearfix">
                 <li><a href="index_art.html">Home/About</a></li>
-                <li><a id="art_page_newer.html">Newer</a></li>
+                <li><a href="art_page_newer.html">Newer</a></li>
                 <li><a href="art_page_older.html">Older</a></li>
                 <li><a href="flyer_page.html">Flyers</a></li>
                 <li><a href="sketchbooks_page.html">Sketchbooks</a></li>
@@ -21,47 +22,54 @@
              </ul>
             <a href="#" id="pull">Menu</a>
    </nav>
-    
+     
      <div class="row">
         <div class="column">
-            <img src="Imgs/dolphin_three_for_sammy_web%20thumb.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow">
-            
-            <img src="Imgs/Emma%20Colorified%20FB%20thumb.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+            <img src="Imgs/dolphin_three_for_sammy_web%20thumb.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow thumb" alt="Dolphin pic I made for my cousin,Sammy">
         </div>
-           <div id="myModal" class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
+        <div class="column">
+            <img src="Imgs/Emma%20Colorified%20FB%20thumb.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow thumb" alt="Thumb of Emma">
+        </div>
+
+        <div id="myModal" class="modal">
+           <span class="close" onclick="closeModal()">&times;</span>
          <div class="modal-content">
             <div class="mySlides">
-             <div class="numbertext"><p>1 / 2</p></div>
-                <img src="Imgs/Sammy%20Dolphin%20porfolio.png">
+              <div class="numbertext">
+               <p>1 / 2</p>
+              </div>
+             <img class="pic" src="Imgs/Dolphin%20for%20Sammy%20web.png" alt="Image I made for my cousin, Sammy, who likes dolphins.">
             </div>
-         
-        <div class="modal-content">
             <div class="mySlides">
-             <div class="numbertext"><p>2 / 2</p></div>
-                <img src="Imgs/Emma%20Portfolio.png">
+             <div class="numbertext">
+               <p>2 / 2</p>
+             </div>
+             <img class="pic" src="Imgs/Emma%20pic%20portfolio.png" alt="Emma">
             </div>
-           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-         
-       </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>           
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+           </div> 
+            
+            <!--- Couldn't get the JavaScript that runs the lightbox to run without the caption and caption-container div. Hope that's not too sloppy... --->
+            
     <div class="caption-container">
       <p id="caption"></p>
     </div>
-    
-    <div class="container">
-                <div class="column">
-                    <img class="demo cursor" src="Imgs/dolphin_three_for_sammy_web%20thumb.jpg" onclick="currentSlide(1)" alt="Dolphin pic I made for my cousin">
-                </div>
+        <div class="container">
+           <div class="column">
+             <img class="demo cursor thumb" src="Imgs/dolphin_three_for_sammy_web%20thumb.jpg" onclick="currentSlide(1)" alt="Dolphin pic I made for my cousin,Sammy">
+           </div>
         
          <div class="column">
-                    <img class="demo cursor" src="Imgs/Emma%20Colorified%20FB%20thumb.jpg" onclick="currentSlide(2)" alt="A rendition of someone I know.">
-                </div>
+             <img class="demo cursor thumb" src="Imgs/Emma%20Colorified%20FB%20thumb.jpg" onclick="currentSlide(2)" alt="Emma">
+         </div>
         </div>
     </div>
-</div>
+
     
     <script type="text/javascript" src="JS/jquery-3.2.1.min.js" ></script>
-       <script type="text/javascript" src="JS/flexible_nav_menu.js"></script><script type="text/javascript" src="JS/art_page.js" ></script>
+    <script type="text/javascript" src="JS/flexible_nav_menu.js"></script>
+    <script type="text/javascript" src="JS/art_page.js" ></script>
     
          
     
