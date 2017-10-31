@@ -272,9 +272,6 @@ img.pic {
   font-weight: bold;
 }
 
-
-/*This seems to scale the modal thumbnails with the image and the modal itself*/
-
 .active, .demo:hover {
   opacity: 1;
 }
