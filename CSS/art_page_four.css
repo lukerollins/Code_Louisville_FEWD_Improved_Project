@@ -272,7 +272,7 @@ img.pic {
   font-weight: bold;
 }
 
-.active, .demo:hover {
+.demo:hover {
   opacity: 1;
 }
 
