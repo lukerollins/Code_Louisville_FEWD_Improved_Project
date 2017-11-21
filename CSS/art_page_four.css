@@ -104,7 +104,7 @@ img.polaroid {
 nav {
     height: 40px;
     width: 100%;
-    background: white;
+    background: black;
     font-size: 11pt;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
@@ -133,11 +133,9 @@ nav a {
     text-align: center;
     text-decoration: none;
     line-height: 40px;
-    text-shadow: 1px 1px 0 black;
 }
 
 nav li a {
-    border-right: 3px solid black;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -148,7 +146,6 @@ nav li:last-child a {
 }
 
 nav a:hover, nav a:active {
-    background-color: black;
     text-shadow: 1px 0 1px white;
 }
 
@@ -186,8 +183,7 @@ nav a#pull {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow-x: scroll;
-  overflow-y: scroll;
+  overflow: display;
   background-color: rgba(0, 0, 0, 0.9) ;
 }
 
@@ -198,9 +194,8 @@ nav a#pull {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  width: 90%;
-  max-width: 1200px;
-  max-height: 1200px;
+  width: 100%;
+  overflow: scroll;
 }
 
 
@@ -220,6 +215,7 @@ img.pic {
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  z-index: 1;
 }
 
 .close:hover,
@@ -284,6 +280,12 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
+.thumb:hover,
+.thumb:focus {
+    cursor:pointer;
+}
+
+
 /*One way to make a site more responsive is through media queries*/
 
 @media screen and (max-width: 640px) {
@@ -314,7 +316,6 @@ img.hover-shadow {
     
     nav li a {
         border-bottom: 1px solid black;
-        border-right: 2px solid black;
     }
     
     nav a {
@@ -323,13 +324,8 @@ img.hover-shadow {
         text-indent: 25px;
     }
 
-/*The light box content started to 'get in the way of each other, which became really bad when this rendered the 'close button' useless. I've remedied that here*/
-    
-    
-    .modal-content {
-        margin: 21px;
-    }
-    
+/*While I'd initially created these rules due to issues involving the modal content, I kept them for the purpose of asthetics, even if they serve no mechanical purpose*/
+   
     .close {
         color: #595959;
         top: 5px;
