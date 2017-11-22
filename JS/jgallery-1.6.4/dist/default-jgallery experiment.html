@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>jGallery</title>
+    <link href="JS/jgallery-1.6.4/dist/css/jgallery.min.css" media="all" rel="stylesheet">
+    <link href="CSS/art_page_four.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="JS/jgallery-1.6.4/dist/css/font-awesome.min.css" />
+    <script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="JS/flexible_nav_menu.js"></script>
+    <script type="text/javascript" src="JS/jgallery-1.6.4/js/jgallery.min.js"></script>
+    <script type="text/javascript" src="js/touchswipe.min.js"></script>
+</head>
+<body>
+
+        <nav class="clearfix">
+                <ul class="clearfix">
+                    <li><a href="index.html">Home/About</a></li>
+                    <li><a href="art_page_newer.html">Newer</a></li>
+                    <li><a href="art_page_older.html">Older</a></li>
+                    <li><a href="flyer_page.html">Flyers</a></li>
+                    <li><a href="sketchbooks_page.html">Sketchbooks</a></li>
+                    <li><a href="contact_page.html">Contact</a></li>
+                </ul>
+                <a href="#" id="pull">Menu</a>
+        </nav>
+<div id="gallery">
+    <a href="images/large/1.jpg"><img src="images/thumbs/1.jpg" alt="Photo 1" /></a>
+    <a href="images/large/2.jpg"><img src="images/thumbs/2.jpg" alt="Photo 2" /></a>
+    <a href="images/large/3.jpg"><img src="images/thumbs/3.jpg" alt="Photo 3" /></a>
+</div>
+<script type="text/javascript">
+$( function() {
+    $( '#gallery' ).jGallery();
+} );
+</script>
+</body>
+</html>
