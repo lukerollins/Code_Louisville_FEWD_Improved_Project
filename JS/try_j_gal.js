@@ -1,5 +1,6 @@
 $( function() {
     $( '#gallery' ).jGallery({
+        height: '400px',
         items: [
             {
                 title: 'Recycled book sketchbook',
