@@ -32,11 +32,8 @@ function showSlides(n) {
 
 var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
-    itemSelector: 'grid-item',
-    columnWidth: 100,
-    percentPosition: true,
-    originTop: false,
-    originLeft: false
+    itemSelector: 'grid',
+    
 });
 
 

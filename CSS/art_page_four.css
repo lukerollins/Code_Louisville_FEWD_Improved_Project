@@ -156,7 +156,7 @@ nav a#pull {
 /****The thumbnails ***/
 
 
-.row > .column {
+/*.row > .column {
   padding: 0 3px;
 }
 
@@ -164,7 +164,7 @@ nav a#pull {
   content: " ";
   display: table;
   clear: both;
-}
+}*/
 
 .column {
   float: left;
@@ -172,15 +172,10 @@ nav a#pull {
 }
 
 
-.grid-item   {
-    width: auto;
-    margin: 10px;
-    cursor: pointer;
+.grid {
+    text-align: center;
 }
 
-.grid-sizer {
-    width: 33.3%;
-}
 /* The Modal (background) */
 
 .modal {
