@@ -176,6 +176,11 @@ nav a#pull {
     text-align: center;
 }
 
+.grid-items {
+    display: inline-block;
+    cursor: pointer;
+}
+
 /* The Modal (background) */
 
 .modal {
@@ -220,6 +225,7 @@ img.pic {
   font-size: 35px;
   font-weight: bold;
   z-index: 1;
+  cursor: pointer;
 }
 
 .close:hover,
