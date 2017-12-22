@@ -155,23 +155,6 @@ nav a#pull {
 
 /****The thumbnails ***/
 
-
-/*.row > .column {
-  padding: 0 3px;
-}
-
-.row:after {
-  content: " ";
-  display: table;
-  clear: both;
-}*/
-
-.column {
-  float: left;
-
-}
-
-
 .grid {
     text-align: center;
 }
@@ -206,6 +189,11 @@ nav a#pull {
   width: 100%;
   overflow: hidden;
 }
+
+.column {
+    float: left;
+  
+  }
 
 
 /*So I don't have to style the images inline*/
@@ -308,7 +296,7 @@ img.hover-shadow {
     }
 
 /*The first of three media queries for the top navigation menu*/
-       nav {
+    nav {
         height: auto;
     }
     
