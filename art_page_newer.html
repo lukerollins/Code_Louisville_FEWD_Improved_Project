@@ -6,6 +6,7 @@
     <title>Newer Works of Luke Rollins Famous Artist</title>
     
     <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="JS/fancybox-master/dist/jquery.fancybox.min.css" rel="stylesheet">
     <link href="CSS/art_page_four.css" rel="stylesheet">
 </head>
     
@@ -22,49 +23,19 @@
              </ul>
             <a href="#" id="pull">Menu</a>
    </nav>
-     
-     <div class="row">
-        <div class="column">
-            <img src="Imgs/dolphin_three_for_sammy_web%20thumb.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow thumb" alt="Dolphin pic I made for my cousin,Sammy">
-        </div>
-        <div class="column">
-            <img src="Imgs/Emma%20Colorified%20FB%20thumb.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow thumb" alt="Thumb of Emma">
-        </div>
 
-        <div id="myModal" class="modal">
-           <span class="close" onclick="closeModal()">&times;</span>
-         <div class="modal-content">
-            <div class="mySlides">
-              <div class="numbertext">
-               <p>1 / 2</p>
-              </div>
-             <img class="pic" src="Imgs/Dolphin%20for%20Sammy%20web.png" alt="Image I made for my cousin, Sammy, who likes dolphins.">
-            </div>
-            <div class="mySlides">
-             <div class="numbertext">
-               <p>2 / 2</p>
-             </div>
-             <img class="pic" src="Imgs/Emma%20pic%20portfolio.png" alt="Emma">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>           
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-           </div> 
-            
-        <div class="container">
-           <div class="column">
-             <img class="demo cursor thumb" src="Imgs/dolphin_three_for_sammy_web%20thumb.jpg" onclick="currentSlide(1)" alt="Dolphin pic I made for my cousin,Sammy">
-           </div>
-        
-         <div class="column">
-             <img class="demo cursor thumb" src="Imgs/Emma%20Colorified%20FB%20thumb.jpg" onclick="currentSlide(2)" alt="Emma">
-         </div>
-        </div>
-    </div>
+   <p>
+       <a href="Imgs2/dolphin_three_for_sammy_portfolio.jpg" data-fancybox="images"><img src="Imgs2/dolphin_three_for_sammy_web_thumb.jpg" class="hover-shadow"></a>
+       <a href="Imgs2/Emma_Portfolio_web.jpg" data-fancybox="images"><img src="Imgs2/Emma_Colorfied_FB_thumb.jpg" class="hover-shadow"></a>
+   </p>
+     
+   
 
     
     <script type="text/javascript" src="JS/jquery-3.2.1.min.js" ></script>
     <script type="text/javascript" src="JS/flexible_nav_menu.js"></script>
-    <script type="text/javascript" src="JS/art_page.js" ></script>
+    <script type="text/javascript" src="JS/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="JS/fancy-script.js"></script>
     
          
     

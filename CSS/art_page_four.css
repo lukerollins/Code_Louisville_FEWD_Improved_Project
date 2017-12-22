@@ -172,105 +172,8 @@ nav a#pull {
 }
 
 
-/* The Modal (background) */
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 10px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: display;
-  background-color: rgba(0, 0, 0, 0.9) ;
-}
-
-/* Modal Content */
-
-.modal-content {
-  position: relative;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow: hidden;
-}
-
-
-/*So I don't have to style the images inline*/
-
-img.pic {
-    width: 100%;
-    height: 100%;
-}
-
-/* The Close Button */
-
-.close {
-  color: #595959;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-  z-index: 1;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Next & Previous Buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 22px;
-  margin-top: -50px;
-  color: #595959;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-
-/* Position the "next button" to the right */
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/*On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
 
 /* Number text */
-.numbertext {
-  color: #6d6d6d;
-  font-size: 22px;
-  padding: 3px 1px;
-  position: relative;
-  top: 0;
-  font-weight: bold;
-}
-
-.demo:hover {
-  opacity: 1;
-}
 
 img.hover-shadow {
     transition: 0.3s;
@@ -289,9 +192,6 @@ img.hover-shadow {
 /*One way to make a site more responsive is through media queries*/
 
 @media screen and (max-width: 640px) {
-    .thumb {
-        width: 62%;
-    }
     
     .fa {
         padding-left: 23px;
@@ -323,33 +223,6 @@ img.hover-shadow {
         width: 100%;
         text-indent: 25px;
     }
-
-/*While I'd initially created these rules due to issues involving the modal content, I kept them for the purpose of asthetics, even if they serve no mechanical purpose*/
-   
-    .close {
-        color: #595959;
-        top: 5px;
-        right: 11px;
-        font-size: 22px;
-        font-weight: bolder;
-    }
-    .numbertext {
-      color: #6d6d6d;
-      font-size: 15px;
-      padding: 15px;
-      top: 0;
-      bottom: 0;
-}
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      padding: 11px;
-      margin-top: -25px;
-      font-weight: bold;
-      font-size: 17px;
-}
 
 }
 
