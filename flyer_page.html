@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Newer Works of Luke Rollins Famous Artist</title>
     <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="JS/fancybox/jquery.fancybox.min.css" rel="stylesheet">
     <link href="CSS/art_page_four.css" rel="stylesheet">
 </head>
     
@@ -21,53 +22,19 @@
              </ul>
             <a href="#" id="pull">Menu</a>
     </nav>
-     <div class="grid">
-        <div class="grid-items">
-          <img src="Imgs/Goth%20prom%202012%20at%20Irish%20Exit%20thumb.jpg " onclick="openModal(); currentSlide(1)" class="hover-shadow thumb" alt="Thumb for Goth Prom 2012 Flyer">
-        </div>
-        <div class="grid-items">    
-          <img src="Imgs/Will%20and%20Tabby%20Pride%20Flyer%20thumb.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow thumb" alt="Thumb for Will and Tabby Flyer">
-        </div>
-     </div>
 
-     <div id="myModal" class="modal">
-       <span class="close" onclick="closeModal()">&times;</span>
-               
-       <div class="modal-content">
-          <div class="mySlides">
-            <div class="numbertext">
-             <p>1 / 2</p>
-            </div>
-             <img class="pic" src="Imgs/Goth%20Prom%202012%20at%20Irish%20Exit%20web2.png" alt="Goth Prom 2012 at the Irish Exit flyer">
-          </div>
-            <div class="mySlides">
-             <div class="numbertext">
-               <p>2 / 2</p>
-             </div>
-              <img class="pic" src="Imgs/Will%20and%20Tabby%20web%20flyer%20two.png" alt="A goth night flyer with DJ Verminoid and his wife, Tabby.">
-            </div>
-           
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <p>
+      <a href="Imgs2/Goth_prom_2012_at_Irish_Exit_portfolio.jpg" data-fancybox="images"><img src="Imgs2/Goth_prom_2012_at_Irish_Exit_thumb.jpg" class="hover-shadow"></a>
+      <a href="Imgs2/Will_and_Tabby_Flyer_portfolio.jpg" data-fancybox="images"><img src="Imgs2/Will_and_Tabby_Pride_Flyer_thumb.jpg" class="hover-shadow"></a>
+    </p>
 
-       </div>
-         
-         <div class="container">
-            <div class="column">
-               <img class="demo cursor thumb" src="Imgs/Goth%20prom%202012%20at%20Irish%20Exit%20thumb.jpg" onclick="currentSlide(1)" alt="Thumb for Goth Prom 2012 Flyer">
-            </div>
-        
-         <div class="column">
-               <img class="demo cursor thumb" src="Imgs/Will%20and%20Tabby%20Pride%20Flyer%20thumb.jpg" onclick="currentSlide(2)" alt="Thumb for Will and Tabby Flyer">
-         </div>
-      </div>
-    </div>
 
     
     <script type="text/javascript" src="JS/jquery-3.2.1.min.js" ></script>
     <script type="text/javascript" src="JS/flexible_nav_menu.js" ></script>
     <script type="text/javascript" src="JS/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="JS/art_page.js" ></script>
+    <script type="text/javascript" src="JS/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="JS/fancybox/fancy-script.js"></script>
     
          
     

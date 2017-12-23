@@ -164,6 +164,7 @@ nav a#pull {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* The Modal (background) */
 
 .modal {
@@ -255,20 +256,11 @@ img.pic {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+=======
+
+>>>>>>> TryFancyBox
 
 /* Number text */
-.numbertext {
-  color: #6d6d6d;
-  font-size: 22px;
-  padding: 3px 1px;
-  position: relative;
-  top: 0;
-  font-weight: bold;
-}
-
-.demo:hover {
-  opacity: 1;
-}
 
 img.hover-shadow {
     transition: 0.3s;
@@ -287,9 +279,6 @@ img.hover-shadow {
 /*One way to make a site more responsive is through media queries*/
 
 @media screen and (max-width: 640px) {
-    .thumb {
-        width: 62%;
-    }
     
     .fa {
         padding-left: 23px;
@@ -321,33 +310,6 @@ img.hover-shadow {
         width: 100%;
         text-indent: 25px;
     }
-
-/*While I'd initially created these rules due to issues involving the modal content, I kept them for the purpose of asthetics, even if they serve no mechanical purpose*/
-   
-    .close {
-        color: #595959;
-        top: 5px;
-        right: 11px;
-        font-size: 22px;
-        font-weight: bolder;
-    }
-    .numbertext {
-      color: #6d6d6d;
-      font-size: 15px;
-      padding: 15px;
-      top: 0;
-      bottom: 0;
-}
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      padding: 11px;
-      margin-top: -25px;
-      font-weight: bold;
-      font-size: 17px;
-}
 
 }
 
