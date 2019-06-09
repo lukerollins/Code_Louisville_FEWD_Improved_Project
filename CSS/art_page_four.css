@@ -19,6 +19,7 @@
 body {
     background-color: white;
     font-family: 'Special Elite', cursive;
+    overflow: hidden;
 }
 
 
@@ -197,6 +198,7 @@ img.hover-shadow {
     .fa {
         padding-left: 23px;
     }
+
 
 /*The first of three media queries for the top navigation menu*/
     nav {
