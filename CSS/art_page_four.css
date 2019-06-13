@@ -1,3 +1,7 @@
+html {
+    font-size: 17px;
+}
+
 
 /* Clearfix */
 .clearfix:before,
@@ -19,7 +23,7 @@
 body {
     background-color: white;
     font-family: 'Special Elite', cursive;
-    font-size: 17px;
+    
 }
 
 
@@ -56,37 +60,31 @@ header {
 }
 
 .wrapper-one {
-    width: 100%;
-    position: relative;
-    margin: 0 3px;
-    /*overflow: auto;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .left {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50%;
+    order: 1;
 }
 
 .right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
+    order: 2;
+    align-self: center;
+    margin: 5px;
 }
 
 /*The icons on the contact page*/
 
 .fa {
     color: #6d6d6d;
-    margin: 8%;
-    padding: 8%;
-    text-align: center;
+    text-align: center; 
+    
 }
 
 .fa-huge {
-    font-size: 3em;
+    font-size: 10em;
 }
 
 /*The illustration on the 'Contact' page*/
@@ -94,8 +92,8 @@ header {
 img.chip {
     height: 99%;
     width: 99%;
-    margin-left: 8px;
-    padding-left: 4px;
+    /*margin-left: 8px;
+    padding-left: 4px;*/
 }
 
 /*The picture on the 'About/Home'page*/
@@ -175,7 +173,7 @@ nav a#pull {
 }
 
 
-/* Shadow when you hove on the thumbnail */
+/* Shadow when you hover on the thumbnail */
 
 img.hover-shadow {
     transition: 0.3s;
@@ -193,16 +191,41 @@ img.hover-shadow {
 
 /*One way to make a site more responsive is through media queries*/
 
-@media screen and (max-width: 640px) {
-    
-    .fa {
-        padding-left: 23px;
+@media screen and (max-width: 739px) {
+    nav {
+        margin-bottom: 40px;
     }
+}
+
+@media screen and (max-width: 640px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    header {
+        font-size: 2.5em;
+    }
+
+    .about {
+        font-size: 1.5em;
+    }
+
+    img.polaroid {
+
+        width: 35%;
+        height: 35%;
+        margin: 5px 6px 5px 5px;
+        padding: 3px;
+        
+     }
+
 
 
 /*The first of three media queries for the top navigation menu*/
     nav {
         height: auto;
+        
     }
     
     nav ul {
@@ -236,6 +259,7 @@ img.hover-shadow {
      
 nav {
         border-bottom: 1px black;
+        margin-bottom: 30px;
     }
     
     nav ul {
@@ -266,12 +290,18 @@ nav {
 /*Attempting to make sure the header looks good at all sizes*/
 
 @media only screen and (max-width: 430px) {
+
+
     header {
-            font-size: 2.5em;
+            font-size: 2.33em;
     }
 
     .about {
         font-size: 1.33em;
+    }
+
+    .fa-huge {
+        font-size: 7em;
     }
 }
 
@@ -284,7 +314,7 @@ nav {
     .about {
         font-size: 1em;
     }
-    
+
     nav li {
         display: block;
         float: none;
