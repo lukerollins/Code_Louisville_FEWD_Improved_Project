@@ -1,21 +1,12 @@
-html {
+/*html {
     font-size: 17px;
-}
+}*/
 
 
-/* Clearfix */
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
 }
 
 /* Basic Styles */
@@ -23,25 +14,43 @@ html {
 body {
     background-color: white;
     font-family: 'Special Elite', cursive;
-    
+    margin: 0;
 }
 
+.content {
+    
+    display: grid;
+    place-items: center;
+    
+     
+}
+
+.grid {
+    grid-column: 1;
+    grid-row: 2;
+}
 
 /*I decided the header should tell you the site you're at on all the pages*/
 
 header {
-    font-size: 3em;
-    align-content: stretch;
+    background: black;
     text-align: center;
-    background-color: black;
-    color: white;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
     
 }
 
-.top {
-    background: black;
-    padding-top: 15px;
+h1.logo {
+    
+    color: white;
+    padding: 1%;
+    
 }
+
+
+
+
 
 /*This is mostly for the 'About/Home' and 'Contact' pages*/
 
@@ -75,6 +84,7 @@ header {
     margin: 5px;
 }
 
+
 /*The icons on the contact page*/
 
 .fa {
@@ -92,8 +102,6 @@ header {
 img.chip {
     height: 99%;
     width: 99%;
-    /*margin-left: 8px;
-    padding-left: 4px;*/
 }
 
 /*The picture on the 'About/Home'page*/
@@ -111,64 +119,115 @@ img.polaroid {
 
 /* My Responsive Menu*/
 
+.nav-toggle {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+    outline: 3px solid white;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 5% 0 3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
 nav {
-    height: 40px;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
     width: 100%;
     background: black;
-    font-size: 1em;
-    position: relative;
-    border-top: 3px solid black;
-    border-bottom: 6px solid black;
-    margin-bottom: 50px;
+    -webkit-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -moz-transform-origin: top;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -moz-transition: transform 400ms ease-in-out;
+    transition: -webkit-transform 400ms ease-in-out;
+    transition: transform 400ms ease-in-out;
+    transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+    
+       
 }
 
 nav ul {
 	padding: 0;
-	margin: 0 auto;
-	width: 600px;
-	height: 40px;
+	margin: 0;
+	list-style: none;
 }
 
 nav li {
-    display: inline;
-    float: left;
+    margin-bottom: 3%;
+    margin-left: 3%;
 }
 
 nav a {
-    color: #fff;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
+    color: white;
+    font-size: 1.2rem;
     text-decoration: none;
-    line-height: 40px;
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
 }
 
-nav li a {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+nav a:hover {
+    color: white;
 }
 
-nav li:last-child a {
-    border-right: 0;
+.nav-toggle:checked ~ nav {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+            
 }
 
-nav a:hover, nav a:active {
-    text-shadow: 1px 0 1px white;
-}
 
-nav a#pull {
-    display: none;
+.nav-toogle:checked ~ nav a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
 }
 
 /****The thumbnails ***/
 
 .grid {
-    text-align: center;
+    margin: 0 0.5% 0 4%;
 }
 
 .grid-items {
-    display: inline-block;
+    /*display: inline-block;*/
     cursor: pointer;
 }
 
@@ -191,20 +250,117 @@ img.hover-shadow {
 
 /*One way to make a site more responsive is through media queries*/
 
-@media screen and (max-width: 739px) {
+@media screen and (min-width: 900px) {
+    .nav-toggle-label {
+        display: none;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        
+        
+    }
+
+    .content {
+        height: 200vh;
+        grid-template-rows: 200px repeat(4, 25%);
+        
+    }
+
+    .grid {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+  
+
+    .logo {
+        grid-column: 3 / 3;
+    }
+
     nav {
-        margin-bottom: 40px;
+        /*Microsoft Edge support*/
+        position: relative;
+        text-align: left;
+        transition: none;
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+        background: none;
+        top: initial;
+        left: initial;
+        /*end of Edge support stuff*/
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 1.5em;
+        /*margin-bottom: 0;*/
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before {
+        content: "";
+        display: block;
+        height: 5px;
+        background: white;
+        position: absolute;
+        top: -25%;
+        left: 0;
+        right: 0;
+        -webkit-transform: scale(0, 1);
+                transform: scale(0, 1);
+        transition: -webkit-transform ease-in-out 250ms;
+        transition: transform ease-in-out 250ms;
+        transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+      }
+    
+      nav a:hover::before {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+      }
+
+}
+
+@media screen and (max-width: 899px) {
+    .content {
+        grid-template-rows: 100px repeat(3, 33%);
+        place-items: center;
+    }
+
+    .logo {
+        margin-left: 5%;
     }
 }
 
 @media screen and (max-width: 640px) {
 
-    html {
+    /*html {
         font-size: 15px;
-    }
+    }*/
+
+    /*.content {
+        height: 185vh;
+    }*/
+
+    /*.grid {
+        height: 100%;
+    }*/
 
     header {
-        font-size: 2.5em;
+        font-size: 0.75em;
     }
 
     .about {
@@ -222,79 +378,16 @@ img.hover-shadow {
 
 
 
-/*The first of three media queries for the top navigation menu*/
-    nav {
-        height: auto;
-        
-    }
-    
-    nav ul {
-        width: 100%;
-        display: block;
-        height: auto;
-    }
-    
-    nav li {
-        width: 50%;
-        float: left;
-        position: relative;
-    }
-    
-    nav li a {
-        border-bottom: 1px solid black;
-    }
-    
-    nav a {
-        text-align: left;
-        width: 100%;
-        text-indent: 25px;
-    }
-
-}
-
-
-@media screen and (max-width: 480px) {
-
-/*Another media query for the navigation*/
-     
-nav {
-        border-bottom: 1px black;
-        margin-bottom: 30px;
-    }
-    
-    nav ul {
-        display: none;
-        height: auto;
-    }
-    
-    nav a#pull {
-        display: block;
-        background-color: black;
-        width: 100%;
-        position: relative;
-    }
-
-    nav a#pull:after {
-        content: "";
-        background: no-repeat;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        position: absolute;
-        right: 15px;
-        top: 10px;
-    }
-
-}
-
 /*Attempting to make sure the header looks good at all sizes*/
 
 @media only screen and (max-width: 430px) {
 
 
-    header {
-            font-size: 2.33em;
-    }
+    /*header {
+        font-size: 2.33em;
+    }*/
+
+  
 
     .about {
         font-size: 1.33em;
@@ -307,21 +400,14 @@ nav {
 
 /*Smartphone*/
 @media only screen and (max-width: 320px) {
-    header {
+    /*header {
         font-size: 2em;
-    }
+    }*/
 
     .about {
         font-size: 1em;
     }
 
-    nav li {
-        display: block;
-        float: none;
-        width: 100%;
-    }
-    
-    nav li a {
-        border-bottom: 1px solid black;
+  
     }
 }
