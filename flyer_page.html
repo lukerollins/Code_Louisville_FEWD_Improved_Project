@@ -10,35 +10,38 @@
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
 </head>
     
-<body>
-    <div class="top">
-            <header>Luke Rollins: Famous Artist</header>
-            <nav class="clearfix">
-                <ul class="clearfix">
-                    <li><a href="index.html">Home/About</a></li>
-                    <li><a href="art_page_newer.html">Newer</a></li>
-                    <li><a href="art_page_older.html">Older</a></li>
-                    <li><a href="flyer_page.html">Flyers</a></li>
-                    <li><a href="sketchbooks_page.html">Sketchbooks</a></li>
-                    <li><a href="contact_page.html">Contact</a></li>
-                </ul>
-                <a href="#" id="pull">Menu</a>
-            </nav>
-    </div>
+<header> 
+    <h1 class="logo">Luke Rollins: Famous Artist</h1> 
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<nav>
+    <ul>
+        <li><a href="index.html">Home/About</a></li>
+        <li><a href="art_page_newer.html">Newer</a></li>
+        <li><a href="art_page_older.html">Older</a></li>
+        <li><a href="flyer_page.html">Flyers</a></li>
+        <li><a href="sketchbooks_page.html">Sketchbooks</a></li>
+        <li><a href="contact_page.html">Contact</a></li>
+        <!--<li><a href="#">Web&nbspProjects</a></li>-->
+    </ul>
+</nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>    
+</header>
+
+<div class="content">
     <div class="grid">
-        <div class="grid-items">
+
             <p>
                 <a href="Imgs2/Goth_prom_2012_at_Irish_Exit_portfolio.jpg" data-fancybox="images"><img src="Imgs2/Goth_prom_2012_at_Irish_Exit_thumb.jpg" class="hover-shadow"></a>
                 <a href="Imgs2/Will_and_Tabby_Flyer_portfolio.jpg" data-fancybox="images"><img src="Imgs2/Will_and_Tabby_Pride_Flyer_thumb.jpg" class="hover-shadow"></a>
                 <a href="Imgs2/Max_G_and_I_SoIN_web.jpg" data-fancybox="images"><img src="Imgs2/Max_G_and_I_SoIN_web_thumb.jpg" class="hover-shadow"></a>
                 <a href="Imgs2/Visceral_Sept_8_2012.jpg" data-fancybox="images"><img src="Imgs2/Visceral_Sept_8_2012_thumb.jpg" class="hover-shadow"></a>
             </p>
-        </div>
+</div>        
     </div>
     
     <script type="text/javascript" src="JS/jquery-3.3.1.min.js" ></script>
-    <script type="text/javascript" src="JS/flexible_nav_menu.js" ></script>
-    <script type="text/javascript" src="JS/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="JS/fancybox/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="JS/fancybox/fancy-script.js"></script>
     

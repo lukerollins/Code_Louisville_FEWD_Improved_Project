@@ -1,13 +1,10 @@
-/*html {
+html {
     font-size: 17px;
-}*/
-
-
-*, 
-*::before, 
-*::after {
     box-sizing: border-box;
 }
+
+
+
 
 /* Basic Styles */
 
@@ -22,12 +19,14 @@ body {
     display: grid;
     place-items: center;
     
+    
      
 }
 
 .grid {
     grid-column: 1;
     grid-row: 2;
+    
 }
 
 /*I decided the header should tell you the site you're at on all the pages*/
@@ -44,7 +43,6 @@ header {
 h1.logo {
     
     color: white;
-    padding: 1%;
     
 }
 
@@ -71,7 +69,9 @@ h1.logo {
 .wrapper-one {
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
+    margin-top: 50%;
 }
 
 .left {
@@ -115,6 +115,10 @@ img.polaroid {
    margin: 5px 9px 5px 5px;
    padding: 4px;
    
+}
+
+.intro {
+    margin-top: 30rem;
 }
 
 /* My Responsive Menu*/
@@ -172,15 +176,12 @@ nav {
     width: 100%;
     background: black;
     -webkit-transform: scale(1, 0);
-    -moz-transform: scale(1, 0);
             transform: scale(1, 0);
-    -moz-transform-origin: top;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -moz-transition: transform 400ms ease-in-out;
-    transition: -webkit-transform 400ms ease-in-out;
-    transition: transform 400ms ease-in-out;
-    transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+    transition: -webkit-transform 400ms ease-out;
+    transition: transform 400ms ease-out;
+    transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
     
        
 }
@@ -222,14 +223,6 @@ nav a:hover {
 
 /****The thumbnails ***/
 
-.grid {
-    margin: 0 0.5% 0 4%;
-}
-
-.grid-items {
-    /*display: inline-block;*/
-    cursor: pointer;
-}
 
 
 /* Shadow when you hover on the thumbnail */
@@ -264,7 +257,7 @@ img.hover-shadow {
 
     .content {
         height: 200vh;
-        grid-template-rows: 200px repeat(4, 25%);
+        grid-template-rows: 180px repeat(3, 30%);
         
     }
 
@@ -317,14 +310,14 @@ img.hover-shadow {
         height: 5px;
         background: white;
         position: absolute;
-        top: -25%;
+        top: -.5rem;
         left: 0;
         right: 0;
         -webkit-transform: scale(0, 1);
                 transform: scale(0, 1);
         transition: -webkit-transform ease-in-out 250ms;
-        transition: transform ease-in-out 250ms;
-        transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+        transition: transform ease-out 250ms;
+        transition: transform ease-in 250ms, -webkit-transform ease-in-out 250ms;
       }
     
       nav a:hover::before {
@@ -334,37 +327,48 @@ img.hover-shadow {
 
 }
 
+@media screen and (max-width: 956px) {
+    .grid {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0 6px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 899px) {
+    html {
+        font-size: 15px;
+    }
+    
     .content {
         grid-template-rows: 100px repeat(3, 33%);
-        place-items: center;
+        /*place-items: center;*/
     }
 
     .logo {
-        margin-left: 5%;
+        margin: 1em 0 1em 3em;
+        
+    }
+
+    h1 {
+        font-size: 1.5em;
+        
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .nav-toggle-label {
+        margin-left: 5%
     }
 }
 
 @media screen and (max-width: 640px) {
 
-    /*html {
-        font-size: 15px;
-    }*/
-
-    /*.content {
-        height: 185vh;
-    }*/
-
-    /*.grid {
-        height: 100%;
-    }*/
-
-    header {
-        font-size: 0.75em;
-    }
-
     .about {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     img.polaroid {
@@ -376,18 +380,19 @@ img.hover-shadow {
         
      }
 
-
+@media only screen and (max-width: 464px) {
+    .nav-toggle-label {
+        margin-left: 7%
+    }
+}
 
 /*Attempting to make sure the header looks good at all sizes*/
 
 @media only screen and (max-width: 430px) {
 
-
-    /*header {
-        font-size: 2.33em;
-    }*/
-
-  
+    .logo {
+        margin-right: 2em;
+    }
 
     .about {
         font-size: 1.33em;
@@ -400,14 +405,19 @@ img.hover-shadow {
 
 /*Smartphone*/
 @media only screen and (max-width: 320px) {
-    /*header {
-        font-size: 2em;
-    }*/
+
 
     .about {
         font-size: 1em;
     }
 
   
+    }
+}
+
+@media only screen and (max-width: 280px) {
+
+    .grid {
+        margin-top: 20%;
     }
 }
