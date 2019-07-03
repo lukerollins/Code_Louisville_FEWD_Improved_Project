@@ -71,7 +71,7 @@ h1.logo {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    margin-top: 50%;
+    margin-top: 42rem;
 }
 
 .left {
@@ -118,7 +118,7 @@ img.polaroid {
 }
 
 .intro {
-    margin-top: 30rem;
+    margin-top: 46rem;
 }
 
 /* My Responsive Menu*/
@@ -332,7 +332,7 @@ img.hover-shadow {
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 0 6px;
+        margin: 0 4rem;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -359,17 +359,40 @@ img.hover-shadow {
     }
 }
 
-@media screen and (max-width: 648px) {
-    .nav-toggle-label {
-        margin-left: 5%
+@media screen and (max-width: 802px) {
+    .wrapper-one {
+        margin-top: 47rem;
     }
 }
 
-@media screen and (max-width: 640px) {
+/*@media screen and (max-width: 679px) {
+    .intro {
+        margin-top: rem
+    }
+}*/
+
+@media screen and (max-width: 648px) {
+    .nav-toggle-label {
+        margin-left: 5%;
+    }
+
+    /*.about {
+        font-size: 1em;
+    }*/
+
+   .intro {
+        margin-top: 43rem;
+    }
 
     .about {
-        font-size: 1em;
+        font-size: 1.5em;
     }
+}
+
+
+@media screen and (max-width: 640px) {
+
+    
 
     img.polaroid {
 
@@ -379,14 +402,65 @@ img.hover-shadow {
         padding: 3px;
         
      }
+}
+
+/*@media screen and (max-width: 614px) {
+    .intro {
+        margin-top: 42rem;
+    }
+}*/
+
+
+@media screen and (max-width: 549px) {
+    .intro {
+        margin-top: 45rem;
+    }
+}
+
+@media screen and (max-width: 532px) {
+        .wrapper-one {
+            margin-top: 38rem;
+        }
+
+        .intro {
+            margin-top: 42rem;
+        }
+
+        .about {
+            font-size: 1.33em;
+        }
+    }
+
+/*@media only screen and (max-width: 491) {
+    .intro {
+        margin-top: 42rem;
+    }
+
+}   */  
 
 @media only screen and (max-width: 464px) {
     .nav-toggle-label {
         margin-left: 7%
     }
+
+    
+
+    .wrapper-one {
+        margin-top: 39rem;
+    }
 }
 
 /*Attempting to make sure the header looks good at all sizes*/
+
+@media only screen and (max-width: 433px) {
+    .intro {
+        margin-top: 43rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    
+}
 
 @media only screen and (max-width: 430px) {
 
@@ -394,12 +468,63 @@ img.hover-shadow {
         margin-right: 2em;
     }
 
-    .about {
-        font-size: 1.33em;
+    .intro {
+        margin-top: 46.5rem;
     }
+
 
     .fa-huge {
         font-size: 7em;
+    }
+
+    .grid {
+        margin: 4rem 0rem 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 421px) {
+    .intro {
+        margin-top: 48rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .intro {
+        margin-top: 50rem;
+    }
+} 
+
+@media only screen and (max-width: 380px) {
+
+    .wrapper-one {
+        margin-top: 35rem;
+    }
+
+    .intro {
+        margin-top: 35rem;
+    }
+
+    .about {
+        font-size: 1em;
+    }
+      
+}
+
+/*@media only screen and (max-width: 363px) {
+    .intro {
+        margin-top: 54rem;
+    }
+}*/
+
+@media only screen and (max-width: 359px) {
+    .intro {
+        margin-top: 36rem;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .intro {
+        margin-top: 38rem;
     }
 }
 
@@ -407,17 +532,49 @@ img.hover-shadow {
 @media only screen and (max-width: 320px) {
 
 
-    .about {
-        font-size: 1em;
+    .intro {
+        margin-top: 39rem;
     }
 
-  
+    .wrapper-one {
+        margin-top: 33rem;
+    } 
+
+   
+
+}
+
+@media only screen and (max-width: 287px) {
+    .intro {
+        margin-top: 42rem;
     }
 }
 
 @media only screen and (max-width: 280px) {
 
-    .grid {
-        margin-top: 20%;
+
+    .intro {
+        margin-top: 43rem;
     }
+    
+}
+
+/* Because of Nokia 8110 4G */
+@media only screen and (max-width: 279px) {
+
+    .intro {
+        margin-top: 47rem;
+    } 
+    
+}
+
+/* Because of Nokia 8110 4G */
+@media only screen and (max-width: 278px) {
+    .wrapper-one {
+        margin-top: 35rem;
+    } 
+
+    .intro {
+        margin-top: 50rem;
+    } 
 }
