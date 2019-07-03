@@ -459,10 +459,6 @@ img.hover-shadow {
 }
 
 @media only screen and (max-width: 430px) {
-    
-}
-
-@media only screen and (max-width: 430px) {
 
     .logo {
         margin-right: 2em;
@@ -478,7 +474,7 @@ img.hover-shadow {
     }
 
     .grid {
-        margin: 4rem 0rem 0 2rem;
+        margin: 3.25rem 0 0 2.33rem;
     }
 }
 
@@ -494,6 +490,12 @@ img.hover-shadow {
     }
 } 
 
+@media only screen and (max-width: 384px) {
+    .intro {
+        margin-top: 51rem;
+    }
+}
+
 @media only screen and (max-width: 380px) {
 
     .wrapper-one {
@@ -501,7 +503,7 @@ img.hover-shadow {
     }
 
     .intro {
-        margin-top: 35rem;
+        margin-top: 34.5rem;
     }
 
     .about {
@@ -544,6 +546,15 @@ img.hover-shadow {
 
 }
 
+
+
+
+@media only screen and (max-width: 299px) {
+    .intro {
+        margin-top: 40rem;
+    }
+}
+
 @media only screen and (max-width: 287px) {
     .intro {
         margin-top: 42rem;
@@ -560,10 +571,10 @@ img.hover-shadow {
 }
 
 /* Because of Nokia 8110 4G */
-@media only screen and (max-width: 279px) {
+@media only screen and (max-width: 276px) {
 
     .intro {
-        margin-top: 47rem;
+        margin-top: 52rem;
     } 
     
 }
@@ -575,6 +586,12 @@ img.hover-shadow {
     } 
 
     .intro {
-        margin-top: 50rem;
+        margin-top: 50.75rem;
+    } 
+}
+
+@media only screen and (max-width: 240px) {
+    .intro {
+        margin-top: 54rem;
     } 
 }
